@@ -60,17 +60,22 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 # Sale Management System (Laravel)
 
-A Laravel-based POS & Sale Management System.
+## Setup
+1. Clone repo:
+   git clone https://github.com/Pitou007/sale_ms.git
 
-## Features
-- Admin Dashboard
-- Products & Categories
-- POS Sales System
-- Customers & Employees
-- Promotions
-- Reports
-- Stock Management
+2. Install dependencies:
+   composer install
 
-## Installation
+3. Copy env:
+   cp .env.example .env
 
-1. Clone repository:
+4. Generate key:
+   php artisan key:generate
+
+5. Run migrations:
+   php artisan migrate --seed
+
+6. Run project:
+   php artisan serve
+
